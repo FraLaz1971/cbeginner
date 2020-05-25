@@ -1,0 +1,113 @@
+# c language beginners programs basic exercises
+# from Dan Gookin "C for dummies" book
+# revised by fralaz1971 francesco.lazzarotto@inaf.it
+# instructions supposing you're at the linux terminal
+# to see the c programs contained in this folder:
+ls *.c *.C
+# to see what is contained in the exercise folder
+ls 
+# to compile and link the program goodbye.c
+gcc goodbye.c -o goodbye
+# to run the program named "goodbye"
+./goodbye
+# to compile and link a c program in general
+gcc <programname>.c -o <programname>
+# to run a c executable program in general
+./<programname>
+# to compile a c source file into an object file without linking
+gcc -c <programname>.c
+# to link an object file into an executable
+gcc -o <programname> programname.o
+# 2 steps compilation example
+gcc -c hello.c
+gcc hello.o -o hello
+# to compile a simple c program using make (without makefile)
+make <programname> # without '.c' extension e.g.
+make hello
+# to remove all generated files
+./clean.sh
+# to remove a single file (pay attention!)
+rm <filename>
+# e.g.
+rm hello
+# to copy a file to another with different filename and same content
+cp <filename> <filename2>
+# e.g.
+cp hello.c hello2.c
+# check what you did
+ls -lh hello.c hello2.c
+# and so on ...
+# list all files which name  starts with hello and finish with .c
+ls -lh hello*.c
+# this clean.sh script is an example of how shell script can simplify your life
+# infact running the program clean.sh is faster than removing all the files one-by-on
+# it is also faster than selecting all with the GUI file browser and then removing it
+# check by yourself!
+###
+# you can copy-paste examples from Dan Gookin "C for dummies" book
+# and execute them, but some characters encoding is not pure ASCII and gives error
+# you have to change double quotes and perhaps other, see copypasterror.c program
+gcc copypasterror.c -o copypasterror
+# to clean the terminal screen
+clear
+# checking errors
+# the program error.c is typed on purpose with an error
+# find the error and correct it :-)
+# check the difference with file you change with diff program
+diff -s whoru.c whoruorig.c
+diff -s whoru.c whoru2.c
+# you can also run interactively an interactive program
+echo "ciccio" | ./whoru
+echo "kingElizabeth" | ./whoru
+# gives batch input to 3x2 matrix processing program
+echo 1 10 11 22 34 57 | ./matrix
+#
+# doublematrix.c takes as input a n x3 array 
+# and multiply each element x 2, n is variable
+# the input data are contained in an ascii text file
+# the output data are given on the standard output (screen)
+./doublematrix 6000 < longinput.dat
+# save output to a file for n=60
+./doublematrix 60 < longinput.dat > outdata-60.dat 2>doublematrix.log
+# the same for n=15 (more generic syntax) and using cat
+n=15; cat longinput.dat | ./doublematrix "$n" > outdata-"$n".dat 2>doublematrix.log
+# to see the files tha has been produced
+ls -alhrt 
+# or
+nautilus . &
+# to generate the long input random data file (values in [1,100) )
+for c in {1..10000}; do echo $(($RANDOM*100/32767)) $(($RANDOM*100/32767)) $(($RANDOM*100/32767)); done > longinput.dat
+# to generate a shorter 7 rows input random data file
+for c in {1..7}; do echo $(($RANDOM*100/32767)) $(($RANDOM*100/32767)) $(($RANDOM*100/32767)); done > shortinput.dat
+##
+# when you compile and link in one step, a temp object .o file is generated and then removed
+# look inside compile-insult.log.save for details
+# see how insult your ex-tutor using the gets function
+make insult
+echo "A.Mura" | ./insult
+.
+├── clean.sh
+├── compile-insult.log.save
+├── copypasterror.c
+├── doublematrix.c
+├── error.c
+├── ERROR.C
+├── goodbye.c
+├── GOODBYE.c
+├── hello.c
+├── inmatrix.dat
+├── insult2.c
+├── insult.c
+├── justify.c
+├── longinput.dat
+├── matrix.c
+├── README
+├── README.short
+├── README.win
+├── rules.c
+├── whoru2.c
+├── whoruage.c
+├── whoru.c
+└── whoruorig.c
+
+0 directories, 23 files
