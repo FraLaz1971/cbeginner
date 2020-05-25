@@ -3,4 +3,4 @@ gcc hello.c -o hello
 #to run
 ./hello
 #to remove
-./clean.sh
+. clean.sh

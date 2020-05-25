@@ -85,25 +85,26 @@ for c in {1..7}; do echo $(($RANDOM*100/32767)) $(($RANDOM*100/32767)) $(($RANDO
 # see how insult your ex-tutor using the gets function
 make insult
 echo "A.Mura" | ./insult
+
 .
-├── clean.sh
-├── compile-insult.log.save
+├── clean.sh (program to remove generated files)
+├── compile-insult.log.save (shows where temporary object files are created -and a warning-)
 ├── copypasterror.c
 ├── doublematrix.c
 ├── error.c
 ├── ERROR.C
 ├── goodbye.c
 ├── GOODBYE.c
-├── hello.c
-├── inmatrix.dat
+├── hello.c (classic first program)
+├── inmatrix.dat (matrix to give as input data file)
 ├── insult2.c
-├── insult.c
+├── insult.c (example of interactive program , batch if read from stdin)
 ├── justify.c
-├── longinput.dat
+├── longinput.dat (long data input file)
 ├── matrix.c
-├── README
-├── README.short
-├── README.win
+├── README (full instuctions)
+├── README.short (very short instructions)
+├── README.win (how to run on MS Windows)
 ├── rules.c
 ├── whoru2.c
 ├── whoruage.c
