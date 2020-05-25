@@ -25,6 +25,7 @@ gcc hello.o -o hello
 make <programname> # without '.c' extension e.g.
 make hello
 # to remove all generated files
+chmod +x clean.sh
 ./clean.sh
 # to remove a single file (pay attention!)
 rm <filename>
