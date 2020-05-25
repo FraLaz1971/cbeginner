@@ -13,7 +13,7 @@ int main(int argc, char** argv){
         }
 	/* 2D array declaration*/
 	const char *snrows=argv[1];
-	fprintf(stderr,"going to process a matrix with %s rows and 3 columns\n", snrows);
+	fprintf(stderr,"going to process a matrix called disp with %s rows and 3 columns\n", snrows);
 	int nrows=atoi(snrows);
 	int disp[nrows][3]; int outval;
 	/*Counter variables for the loop*/
