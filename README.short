@@ -4,3 +4,7 @@ gcc hello.c -o hello
 ./hello
 #to remove
 . clean.sh
+# to update changes you did on the git repository
+git push
+git commit -a -m "changed this for that"
+
