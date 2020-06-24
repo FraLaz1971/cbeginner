@@ -1,6 +1,6 @@
 # c language beginners programs basic exercises
 # from Dan Gookin "C for dummies" book
-# revised by fralaz1971 francesco.lazzarotto@inaf.it
+# revised by fralaz1971 fralaz1971@gmail.com
 # instructions supposing you're at the linux terminal
 # to see the c programs contained in this folder:
 ls *.c *.C
