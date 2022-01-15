@@ -45,30 +45,38 @@ check what you did
 list all files which name  starts with hello and finish with .c
 	ls -lh hello*.c
 this clean.sh script is an example of how shell script can simplify your life
-infact running the program clean.sh is faster than removing all the files one-by-on
+infact running the program clean.sh is faster than removing all the files one-by-one
 it is also faster than selecting all with the GUI file browser and then removing it
 # check by yourself!
 ###
 you can copy-paste examples from Dan Gookin "C for dummies" book
 and execute them, but some characters encoding is not pure ASCII and gives error
 you have to change double quotes and perhaps other, see copypasterror.c program
+
 	gcc copypasterror.c -o copypasterror
+
 to clean the terminal screen
 	clear
 ### checking errors
 the program error.c is typed on purpose with an error
 find the error and correct it :-)
 check the difference with file you change with diff program
-	diff -s whoru.c whoruorig.c
-	diff -s whoru.c whoru2.c
+
+    diff -s whoru.c whoruorig.c
+    diff -s whoru.c whoru2.c
+    
 you can also run interactively an interactive program
-	echo "ciccio" | ./whoru
-	echo "kingElizabeth" | ./whoru
+	
+    echo "ciccio" | ./whoru
+    echo "kingElizabeth" | ./whoru
+    
 gives batch input to 3x2 matrix processing program
-	echo 1 10 11 22 34 57 | ./matrix
+    
+    echo 1 10 11 22 34 57 | ./matrix
+    
 #
 ### doublematrix.c 
-takes as input a n x3 array 
+takes as input a nx3 array 
 and multiply each element x 2, n is variable
 the input data are contained in an ascii text file
 the output data are given on the standard output (screen)
