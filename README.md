@@ -72,25 +72,39 @@ takes as input a n x3 array
 and multiply each element x 2, n is variable
 the input data are contained in an ascii text file
 the output data are given on the standard output (screen)
-	./doublematrix 6000 < longinput.dat
+
+    ./doublematrix 6000 < longinput.dat
+
 save output to a file for n=60
-	./doublematrix 60 < longinput.dat > outdata-60.dat 2>doublematrix.log
+
+    ./doublematrix 60 < longinput.dat > outdata-60.dat 2>doublematrix.log
+
 the same for n=15 (more generic syntax) and using cat
-	n=15; cat longinput.dat | ./doublematrix "$n" > outdata-"$n".dat 2>doublematrix.log
+
+    n=15; cat longinput.dat | ./doublematrix "$n" > outdata-"$n".dat 2>doublematrix.log
+
 to see the files tha has been produced
-	ls -alhrt 
+
+    ls -alhrt 
+
 or
-	nautilus . &
+    
+    nautilus . &
+
 to generate the long input random data file (values in [1,100) )
-	for c in {1..10000}; do echo $(($RANDOM*100/32767)) $(($RANDOM*100/32767)) $(($RANDOM*100/32767)); done > longinput.dat
+    for c in {1..10000}; do echo $(($RANDOM*100/32767)) $(($RANDOM*100/32767)) $(($RANDOM*100/32767)); done > longinput.dat
+
 to generate a shorter 7 rows input random data file
-	for c in {1..7}; do echo $(($RANDOM*100/32767)) $(($RANDOM*100/32767)) $(($RANDOM*100/32767)); done > shortinput.dat
+    
+    for c in {1..7}; do echo $(($RANDOM*100/32767)) $(($RANDOM*100/32767)) $(($RANDOM*100/32767)); done > shortinput.dat
+
 ##
+
 when you compile and link in one step, a temp object .o file is generated and then removed
 look inside compile-insult.log.save for details
 see how insult your ex-partner using the gets function
-make insult
-echo "J.Doe" | ./insult
+    make insult
+    echo "J.Doe" | ./insult
 #
 ### args.c ---> program arguments
 We show how to give input to the program directly in the command line launching them
