@@ -6,7 +6,11 @@ revised and tested by fralaz1971 fralaz1971@gmail.com
 ## instructions to run programs 
 
 ### we're supposing you're at the linux/MacOS/msys2 terminal.
-
+Here few commands examples to introduce you to shell commands
+in a unix-like environment. If you want to know more
+about the usage of shell commands on GNU/Linux or MacOS
+read also [here](https://www.digitalocean.com/community/tutorials/an-introduction-to-the-linux-terminal). Links are provided also if you want to know more about the usage of MicroSoft windows [cmd](https://devblogs.microsoft.com/commandline/introducing-windows-terminal/)
+terminal and its [batch](https://ss64.com/nt/cmd.html) shell language.
 To see the c programs contained in the main folder:
 
 	ls *.c *.C
