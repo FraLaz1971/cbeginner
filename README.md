@@ -5,42 +5,76 @@ revised and tested by fralaz1971 fralaz1971@gmail.com
 ## instructions to run programs 
 we're supposing you're at the linux/MacOS/msys2 terminal.
 To see the c programs contained in the main folder:
+
 	ls *.c *.C
+	
 to see what is contained in the exercise folder
+
 	ls 
+	
 to compile and link the program goodbye.c
+
 	gcc goodbye.c -o goodbye
+	
 to run the program named "goodbye"
+
 	./goodbye
+	
 to compile and link a c program in general
+
 	gcc <programname>.c -o <programname>
+	
 to run a c executable program in general
+
 	./<programname>
+	
 to compile a c source file into an object file without linking
+
 	gcc -c <programname>.c
+	
 to link an object file into an executable
+
 	gcc -o <programname> programname.o
+	
 2 steps compilation example
+
 	gcc -c hello.c
 	gcc hello.o -o hello
+	
 to compile a simple c program using make (without makefile)
+
 	make <programname> # without '.c' extension e.g.
 	make hello
+	
 to remove all generated files
+
 	./clean.sh
+	
 in case the file clean.sh is not executable, type
+
 	chmod +x clean.sh 
+	
 (this chmod only one time)
 to remove a single file (pay attention!)
+
 	rm <filename>
+	
 e.g.
+
 	rm hello
+	
 to copy a file to another with different filename and same content
+
 	cp <filename> <filename2>
+	
 e.g.
+
 	cp hello.c hello2.c
+	
 check what you did
+
 	ls -lh hello.c hello2.c
+	
 # and so on ...
 list all files which name  starts with hello and finish with .c
 	ls -lh hello*.c
