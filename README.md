@@ -58,6 +58,7 @@ in case the file clean.sh is not executable, type
 	chmod +x clean.sh 
 	
 (this chmod only one time)
+#
 to remove a single file (pay attention!)
 
 	rm <filename>
