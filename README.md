@@ -1,8 +1,10 @@
-# c language beginners programs basic exercises
-from Dan Gookin "C for dummies" book
-revised by fralaz1971 fralaz1971@gmail.com
-## instructions supposing you're at the linux terminal
-to see the c programs contained in this folder:
+# c language programs for beginners 
+introductory exercises
+from Dan Gookin "C for dummies" book (2004)
+revised and tested by fralaz1971 fralaz1971@gmail.com
+## instructions to run programs 
+we're supposing you're at the linux/MacOS/msys2 terminal.
+To see the c programs contained in the main folder:
 	ls *.c *.C
 to see what is contained in the exercise folder
 	ls 
