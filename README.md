@@ -161,29 +161,30 @@ They are explained in Gookin (2004), too.
     please type a key and then enter 
     h
 #
-├── args.c (shows the main(argc, argv) function arguments usage)
-├── clean.sh (program to remove generated files)
-├── compile-insult.log.save (shows where temporary object files are created -and a warning-)
-├── copypasterror.c
-├── doublematrix.c
-├── error.c
-├── ERROR.C
-├── goodbye.c
-├── GOODBYE.c
-├── hello.c (classic first program)
-├── inmatrix.dat (matrix to give as input data file)
-├── insult2.c
-├── insult.c (example of interactive program , batch if read from stdin)
-├── justify.c
-├── longinput.dat (long data input file)
-├── matrix.c
-├── README (full instuctions)
-├── README.short (very short instructions)
-├── README.win (how to run on MS Windows)
-├── rules.c
-├── whoru2.c
-├── whoruage.c
-├── whoru.c
-└── whoruorig.c
+    ├── args.c (shows the main(argc, argv) function arguments usage)
+    ├── clean.sh (program to remove generated files)
+    ├── compile-insult.log.save (shows where temporary object files are created -and a warning-)
+    ├── copypasterror.c
+    ├── doublematrix.c
+    ├── error.c
+    ├── ERROR.C
+    ├── goodbye.c
+    ├── GOODBYE.c
+    ├── hello.c (classic first program)
+    ├── inmatrix.dat (matrix to give as input data file)
+    ├── insult2.c
+    ├── insult.c (example of interactive program , batch if read from stdin)
+    ├── justify.c
+    ├── longinput.dat (long data input file)
+    ├── matrix.c
+    ├── README.md (full instuctions markdown)
+    ├── README (full instuctions)
+    ├── README.short (very short instructions)
+    ├── README.win (how to run on MS Windows)
+    ├── rules.c
+    ├── whoru2.c
+    ├── whoruage.c
+    ├── whoru.c
+    └── whoruorig.c
 
-0 directories, 23 files
+    0 directories, 25 files
