@@ -1,6 +1,7 @@
 # c language programs for beginners 
 introductory exercises
-from Dan Gookin "C for dummies" book (2004)
+from Dan Gookin ["C for dummies"](https://www.amazon.it/dp/0764570684?tag=duckduckgo-newext-it-21&linkCode=osi&th=1&psc=1) book (2004). 
+
 revised and tested by fralaz1971 fralaz1971@gmail.com
 ## instructions to run programs 
 
