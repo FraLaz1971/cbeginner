@@ -92,6 +92,7 @@ or
     nautilus . &
 
 to generate the long input random data file (values in [1,100) )
+
     for c in {1..10000}; do echo $(($RANDOM*100/32767)) $(($RANDOM*100/32767)) $(($RANDOM*100/32767)); done > longinput.dat
 
 to generate a shorter 7 rows input random data file
