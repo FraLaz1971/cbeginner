@@ -3,7 +3,9 @@ introductory exercises
 from Dan Gookin "C for dummies" book (2004)
 revised and tested by fralaz1971 fralaz1971@gmail.com
 ## instructions to run programs 
-we're supposing you're at the linux/MacOS/msys2 terminal.
+
+### we're supposing you're at the linux/MacOS/msys2 terminal.
+
 To see the c programs contained in the main folder:
 
 	ls *.c *.C
@@ -77,10 +79,15 @@ check what you did
 	
 # and so on ...
 list all files which name  starts with hello and finish with .c
+
 	ls -lh hello*.c
-this clean.sh script is an example of how shell script can simplify your life
+	
+this 
+    clean.sh 
+script is an example of how shell script can simplify your life
 infact running the program clean.sh is faster than removing all the files one-by-one
 it is also faster than selecting all with the GUI file browser and then removing it
+
 # check by yourself!
 ###
 you can copy-paste examples from Dan Gookin "C for dummies" book
@@ -90,7 +97,9 @@ you have to change double quotes and perhaps other, see copypasterror.c program
 	gcc copypasterror.c -o copypasterror
 
 to clean the terminal screen
+
 	clear
+	
 ### checking errors
 the program error.c is typed on purpose with an error
 find the error and correct it :-)
@@ -146,8 +155,10 @@ to generate a shorter 7 rows input random data file
 when you compile and link in one step, a temp object .o file is generated and then removed
 look inside compile-insult.log.save for details
 see how insult your ex-partner using the gets function
+
     make insult
     echo "J.Doe" | ./insult
+    
 #
 ### args.c ---> program arguments
 We show how to give input to the program directly in the command line launching them
