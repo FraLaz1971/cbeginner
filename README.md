@@ -171,10 +171,11 @@ We show how to give input to the program directly in the command line launching 
 program executable.
     int main(int argc, char **argv )
 it is called the signature of the main function
-argc and argv are the input argument to the function main() the function main() always return an integer, that gives 0 if the main() ended with no error
-argc is an integer expressing the input values given to the program, added 1 for the program name that is the first (index zero) argument
-char **argv or also char * argv[] it is an array of strings, of sets of characters that can be passed to the program
-say you have a program called my prog
+argc and argv are the input argument to the function main() the function main() always returns 
+an integer, that gives 0 if the main() ended with no error, argc is an integer expressing the input 
+values given to the program, added 1 for the program name that is the first (index zero) argument
+char **argv or also char * argv[] it is an array of strings, of sets of characters that can be 
+passed to the program, say you have a program called my prog
     myprog.exe
 when you run it like:
 
@@ -182,16 +183,17 @@ when you run it like:
 
 then
 argc will be = 6 because you have 1 2 "hello" 3 "alita" that are 5 plus the program name myprog.exe 
-in total they are 6.
-this means that argv array will be:
-argv[0] = "myprog.exe"
-argv[1] = "1"
-argv[2] = "2"
-argv[3] = "hello"
-argv[4] = "3"
-argv[5] = "alita"
+in total they are 6. This means that argv array will be:
+
+	argv[0] = "myprog.exe"
+	argv[1] = "1"
+	argv[2] = "2"
+	argv[3] = "hello"
+	argv[4] = "3"
+	argv[5] = "alita"
+
 the variable argc expresses the number of input arguments to the program.
-(+1 that is the program name, and it is the first element of argv[])
+(+1 that is the program name, and it is the first element of argv[]).
 argv[] instead is an array of strings, do you know what are strings?
 They are explained in Gookin (2004), too.
 ### seeing the run with no arguments:
