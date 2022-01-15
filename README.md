@@ -5,7 +5,7 @@ from Dan Gookin ["C for dummies"](https://www.amazon.it/dp/0764570684?tag=duckdu
 revised and tested by fralaz1971 fralaz1971@gmail.com
 ## instructions to run programs 
 
-### we're supposing you're at the linux/MacOS/msys2 terminal.
+### we're supposing you're at the linux/MacOS/[msys2](https://www.msys2.org/) terminal.
 Here few commands examples to introduce you to shell commands
 in a unix-like environment. If you want to know more
 about the usage of shell commands on GNU/Linux or MacOS
@@ -213,6 +213,7 @@ They are explained in Gookin (2004), too.
     please type a key and then enter 
     d
 #
+### seeing the run with some arguments:
     francesco@squirrel:~/projects/c_cpp/cbeginner$ ./args 1 2 "hello" 0.41
     **************************************
     ** This program shows the use
