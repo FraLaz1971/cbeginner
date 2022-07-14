@@ -1,0 +1,80 @@
+CC=gcc
+CFLAGS = -I.
+DEPS =
+LFLAGS = -L.
+LIBS = -lm
+CEXT = .c
+EEXT =
+OEXT = .o
+RM = rm -f
+MAKE = make
+.PHONY: all clean
+
+TARGET1 = args
+TARGET2 = writefile
+TARGET12 = rules
+TARGET3 = doublematrix
+TARGET5 = goodbye
+TARGET6 = GOODBYE
+TARGET7 = hello
+TARGET8 = insult
+TARGET9 = justify
+TARGET10 = matrix
+TARGET11 = readfile
+TARGET13 = whoru
+TARGET14 = whoru2
+TARGET15 = whoruage
+TARGET16 = whoruorig
+TARGET16 = error
+TARGET17 = copypasterror
+TARGETS = $(TARGET1) $(TARGET2) $(TARGET3) $(TARGET4) $(TARGET5) $(TARGET6) $(TARGET7) $(TARGET8) $(TARGET9) $(TARGET10) $(TARGET11) $(TARGET12) $(TARGET13) $(TARGET14) $(TARGET15) $(TARGET16) $(TARGET17) 
+
+all:
+	$(MAKE) $(TARGETS)
+
+%.$(OEXT): %.c $(DEPS)
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+
+$(TARGET1): $(TARGET1)$(OEXT)
+	$(CC) -o $(TARGET1)$(EEXT) $(TARGET1)$(OEXT) 
+
+$(TARGET2): $(TARGET2)$(OEXT)
+	$(CC) -o $(TARGET2)$(EEXT) $(TARGET2)$(OEXT) 
+
+$(TARGET3): $(TARGET3)$(OEXT)
+	$(CC) -o $(TARGET3)$(EEXT) $(TARGET3)$(OEXT) 
+
+$(TARGET4): $(TARGET4)$(OEXT)
+	$(CC) -o $(TARGET4)$(EEXT) $(TARGET4)$(OEXT) 
+
+$(TARGET5): $(TARGET5)$(OEXT)
+	$(CC) -o $(TARGET5)$(EEXT) $(TARGET5)$(OEXT) 
+
+$(TARGET6): $(TARGET6)$(OEXT)
+	$(CC) -o $(TARGET6)$(EEXT) $(TARGET6)$(OEXT) 
+
+$(TARGET7): $(TARGET7)$(OEXT)
+	$(CC) -o $(TARGET7)$(EEXT) $(TARGET7)$(OEXT) 
+
+$(TARGET8): $(TARGET8)$(OEXT)
+	$(CC) -o $(TARGET8)$(EEXT) $(TARGET8)$(OEXT) 
+
+$(TARGET9): $(TARGET9)$(OEXT)
+	$(CC) -o $(TARGET9)$(EEXT) $(TARGET9)$(OEXT) 
+
+$(TARGET10): $(TARGET10)$(OEXT)
+	$(CC) -o $(TARGET10)$(EEXT) $(TARGET10)$(OEXT) 
+
+$(TARGET11): $(TARGET11)$(OEXT)
+	$(CC) -o $(TARGET11)$(EEXT) $(TARGET11)$(OEXT) 
+
+$(TARGET12): $(TARGET12)$(OEXT)
+	$(CC) -o $(TARGET12)$(EEXT) $(TARGET12)$(OEXT) 
+
+$(TARGET13): $(TARGET13)$(OEXT)
+	$(CC) -o $(TARGET13)$(EEXT) $(TARGET13)$(OEXT) 
+
+
+clean:
+	$(RM) $(TARGETS)
